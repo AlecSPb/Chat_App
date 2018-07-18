@@ -6,21 +6,27 @@ import android.support.v4.app.FragmentPagerAdapter
 import com.zaqoutabed.github.kotlin_chat.Fragments.LoginFragment
 import com.zaqoutabed.github.kotlin_chat.Fragments.SignupFragment
 
-class LoginFragmentPagerAdapter(fm:FragmentManager): FragmentPagerAdapter(fm) {
-    private var fragments = arrayOf(LoginFragment(), SignupFragment())
-    private var titles = arrayOf("Login", "Sign up")
+class LoginFragmentPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
+    private var fragments: ArrayList<Fragment> = ArrayList<Fragment>()
+    private var titles: ArrayList<String> = ArrayList<String>()
+
+    init {
+        fragments.add(LoginFragment())
+        fragments.add(SignupFragment())
+        titles.add("تسجيل الدخول")
+        titles.add("التسجيل")
+    }
 
     override fun getItem(position: Int): Fragment {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return fragments[position]
     }
 
     override fun getCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-        return 2
+        return fragments.size
     }
 
     override fun getPageTitle(position: Int): CharSequence {
         return titles[position]
     }
+
 }

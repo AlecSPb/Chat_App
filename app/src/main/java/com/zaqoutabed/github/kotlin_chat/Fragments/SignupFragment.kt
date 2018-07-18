@@ -1,6 +1,5 @@
 package com.zaqoutabed.github.kotlin_chat.Fragments
 
-
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +24,4 @@ class SignupFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_signup, container, false)
     }
-
-
 }

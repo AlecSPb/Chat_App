@@ -4,10 +4,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.zaqoutabed.github.kotlin_chat.R
 
-class ChatRoomsActivity : AppCompatActivity() {
+class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_chat_rooms)
+        setContentView(R.layout.activity_settings)
     }
 }

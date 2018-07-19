@@ -1,21 +1,18 @@
 package com.zaqoutabed.github.kotlin_chat.Models.MessageItem
 
+import android.net.Uri
 import android.support.v7.widget.RecyclerView
+import com.zaqoutabed.github.kotlin_chat.Adapters.MessageItemAdapter
+import com.zaqoutabed.github.kotlin_chat.R
 
-class VideoMessage(videoUrl:String, isReceived:Boolean):MessageItem {
+class VideoMessage(private var videoUrl:String, private var isReceived:Boolean):MessageItem {
 
-    var videoUrl:String
-    var isReceived:Boolean
-
-    init {
-        this.videoUrl = videoUrl
-        this.isReceived = isReceived
-    }
     override fun getType(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return R.layout.row_video_message
     }
 
     override fun bindItem(holder: RecyclerView.ViewHolder) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val videoHolder : MessageItemAdapter.VideoMessageHolder = holder as MessageItemAdapter.VideoMessageHolder
+        videoHolder.video_message.setVideoURI(Uri.parse(this.videoUrl))
     }
 }

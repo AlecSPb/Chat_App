@@ -1,26 +1,27 @@
 <resources>
-    <string name="app_name">Kotlin_chat</string>
+    <string name="app_name">Kotlin Chat</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="email_address">Email</string>
     <string name="password">Password</string>
-    <string name="login">Log in</string>
+    <string name="login">Log In</string>
     <string name="username">Username</string>
-    <string name="register">Sign up</string>
-    <string name="title_activity_home">Home Activity</string>
+    <string name="register">Sign Up</string>
+    <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="chat_rooms">Chats</string>
+    <string name="chat_rooms">Chat Rooms</string>
     <string name="my_friends">My Friends</string>
     <string name="add_friends">Add Friends</string>
     <string name="profile">My Profile</string>
     <string name="Settings">Settings</string>
-    <string name="log_out">Log out</string>
+    <string name="log_out">Log Out</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat_room_title">Chat Room Title</string>
 </resources>

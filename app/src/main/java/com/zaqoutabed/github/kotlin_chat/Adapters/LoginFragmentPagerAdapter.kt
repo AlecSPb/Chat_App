@@ -13,8 +13,8 @@ class LoginFragmentPagerAdapter(fragmentManager: FragmentManager) : FragmentPage
     init {
         fragments.add(LoginFragment())
         fragments.add(SignupFragment())
-        titles.add("تسجيل الدخول")
-        titles.add("التسجيل")
+        titles.add("Log in")
+        titles.add("Sign up")
     }
 
     override fun getItem(position: Int): Fragment {

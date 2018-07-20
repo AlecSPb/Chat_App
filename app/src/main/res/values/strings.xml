@@ -24,4 +24,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="chat_room_title">Chat Room Title</string>
+    <string name="type_message">Type message</string>
+    <string name="send">SEND</string>
+    <string name="message_name">message name</string>
+    <string name="message_body">hi man, how are you?</string>
 </resources>
